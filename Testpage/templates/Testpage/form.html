@@ -1,0 +1,13 @@
+<form method="POST" action="{% url 'Testpage:form' %}">
+    {% csrf_token %}
+    <div class="field">
+        <label>First name: </label>
+        {{ form.Name }}
+    </div>
+    <div class="field">
+        <label>Mail: </label>
+        {{ form.Mail }}
+    </div>
+    </div>
+    <input type="submit" value="Submit">
+</form>
